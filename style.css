@@ -1,0 +1,55 @@
+body {
+	background-color:lightgreen;
+}
+.littleBoard {
+	height: 240px;
+	width: 240px;
+	background-color: black;
+	text-align: center;
+	display:grid;
+	grid-template-columns: auto auto auto;
+}
+.square {
+	height:80px;
+	width: 80px;
+	background-color:lightgreen;
+	display:flex;
+	color:black;
+	font-size:80px;
+	border: 1px solid black;
+	align-items: center;
+	justify-content: center;
+}
+.header {
+	font-size:25px;
+	font-weight:bold;
+}
+.container {
+	background-color:lightgreen;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+a {
+	font-size:16px;
+	display:inline-block;
+	text-decoration: none;
+	color:black;
+}
+.deadLink {
+	color:red;
+}
+.t {
+	border-top:none;
+}
+.b {
+	border-bottom:none;
+}
+.r {
+	border-right:none;
+}
+.l {
+	border-left:none;
+}

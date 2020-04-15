@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+		<script src="2player.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">Tic Tac Toe</div>
+			<br>
+			<div class="littleBoard">
+				<div class="square t l" onclick="takeTurn(this)" id="0"></div>
+				<div class="square t" onclick="takeTurn(this)" id= "1"></div>
+				<div class="square t r" onclick="takeTurn(this)" id= "2"></div>
+				<div class="square l" onclick="takeTurn(this)" id= "3"></div>
+				<div class="square" onclick="takeTurn(this)" id= "4"></div>
+				<div class="square r" onclick="takeTurn(this)" id= "5"></div>
+				<div class="square b l" onclick="takeTurn(this)" id= "6"></div>
+				<div class="square b" onclick="takeTurn(this)" id= "7"></div>
+				<div class="square b r" onclick="takeTurn(this)" id= "8"></div>
+			</div>
+			<br>
+			<div class="header"><span id="turn"></span> <span onclick='reset()' id='refresh'><img src='refresh.png' height='16'></span></div>
+			<div class="header">X wins: <span id="xWins">0</span> | O Wins: <span id="oWins">0</span></div>
+			<div ><a href="index.html" class="activeLink">One-Player</a> | <a href="#" class="deadLink">Two-Player</a></div>
+		</div>
+	</body>
+</html>
